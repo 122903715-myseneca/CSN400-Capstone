@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="website_style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
+</head>
+<body>
+
+<div id="logo">
+  <center><img src="seneca.png" align="bottom"> </center>
+</div>
+
+<div id="header">
+ <li id="site_name">CodeSpaces.com</li>
+ <li onclick="scrollto('home');">HOME</li>
+ <li onclick="scrollto('about');">ABOUT</li>
+ <li onclick="scrollto('contact');">CONTACT</li>
+</div>
+
+<div id="home">
+ <h1>Collaboration in GitHub and Conflict Resolution<p>CodeSpaces.com</p></h1>
+ <p>Version control systems are all about managing contributions between multiple distributed authors ( usually developers ). Sometimes multiple developers may try to edit the same content. If Developer A tries to edit code that Developer B is editing a conflict may occur. To alleviate the occurrence of conflicts developers will work in separate isolated branches. The git merge command's primary responsibility is to combine separate branches and resolve any conflicting edits.</p>
+</div>
+
+<div id="about" style="color:blue">
+ <p>Merging and conflicts are a common part of the Git experience. Conflicts in other version control tools like SVN can be costly and time-consuming. Git makes merging super easy. Most of the time, Git will figure out how to automatically integrate new changes.</p>
+ <p>Conflicts generally arise when two people have changed the same lines in a file, or if one developer deleted a file while another developer was modifying it. In these cases, Git cannot automatically determine what is correct. Conflicts only affect the developer conducting the merge, the rest of the team is unaware of the conflict. Git will mark the file as being conflicted and halt the merging process. It is then the developers' responsibility to resolve the conflict.</p>
+ <p>Types of merge conflicts:</p>
+ <div id="list">
+  <li>Git fails to start the merge</li>
+  <li>Git fails during the merge</li>
+ </div>
+ <p>Replace with your paragraphs</p>
+ </div>
+
+<div id="contact">
+<p><b>If you have any question or query you can reach us at</b><br><a href="mailto:support@codespaces.com">support@codespaces.com</a><br><br></p>
+
+<form action="//www.html.am/html-codes/textboxes/submitted.cfm">
+<textarea name="myTextBox" cols="50" rows="5" style="background-color:#FCF5D8;">
+We always like to hear from you. Give us your feedback ...
+</textarea>
+<br />
+<input type="submit" />
+</div>
+</body>
+<footer>
+  <p>Author: xxx xxx</p>
+  <p><a href="mailto:xxx@myseneca.ca"></a>xxx@myseneca.ca</p>
+  <p><a href="https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts">Git Merge Conflicts</a></p>
+  </footer>
+</html>
