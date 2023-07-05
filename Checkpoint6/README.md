@@ -52,11 +52,11 @@ The Azure CLI command to create a vnet is ```az network vnet create``` The param
 The command to create a subnet is az network vnet subnet create. The paramters required are resource-group, vnet-name, name, and address prefixes.
 
 ## Part B:
-### 1. [List all VNETs using az network vnet list command and send the output in json format to vnet_list.jsonfile](#vnet_list.json)
+### 1. [List all VNETs using az network vnet list command and send the output in json format to vnet_list.jsonfile](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/vnet_list.json)
 
-### 2. [Get the details of your default student vnet using az show command and send the output in json format to student_vnet.json file](#student_vnet.json)
+### 2. [Get the details of your default student vnet using az show command and send the output in json format to student_vnet.json file](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/student_vnet.json)
 
-### 3. [List all peerings using az network vnet peering list command and send the output in table format to peerings.tblfile](#peerings.tblfile)
+### 3. [List all peerings using az network vnet peering list command and send the output in table format to peerings.tblfile](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/peerings.tbl)
 
 ### 4. Get the details of your Router-XX subnet SN1 using az show command in json format and query it for details of subnet and rout associations.
 ```
@@ -74,9 +74,9 @@ The command to create a subnet is az network vnet subnet create. The paramters r
   "type": "Microsoft.Network/virtualNetworks/subnets"
 }
 ```
-### 5. [List all routes in RT-xx using az network route-table route list command and send the output in table format to route_list.tblfile](#route_list.tblfile)
+### 5. [List all routes in RT-xx using az network route-table route list command and send the output in table format to route_list.tblfile](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/route_list.tblfile)
 
-### 6. [Get the details of route between your Router-xx SN1 and Server-xx SN using az network route-table route show and send the output in json format to route_details.json](#route_details.json)
+### 6. [Get the details of route between your Router-xx SN1 and Server-xx SN using az network route-table route show and send the output in json format to route_details.json](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/route_details.json)
 
 ## Part C:
 ### 1. **```What is Azure Virtual Network (VNET)? Elaborate in your own words```**
@@ -110,13 +110,13 @@ When you are connecting multiple VNET's together, and want to interconnect all o
 az vm list --output table > vm_list.tbl
 ```
 
-### 2. [Get the details of your WC-99 using az show command and send the output in json format to WC-99-details.json file. What command did you use?](#wc-153-details.json)
+### 2. [Get the details of your WC-99 using az show command and send the output in json format to WC-99-details.json file. What command did you use?](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/WC-153-details.json)
 ```The command I used was:``` 
 ```
 az vm show --name WC-153 --resource-group Student-RG-954630 --output json > WC-153-details.json
 ```
 
-### 3. [List all NSG using az list command and send the output in table format to nsg_list.tblfile. What command did you use?](#nsg_list.tblfile)
+### 3. [List all NSG using az list command and send the output in table format to nsg_list.tblfile. What command did you use?](https://github.com/122903715-myseneca/CSN400-Capstone/blob/main/Checkpoint6/nsg_list.tblfile)
 ```The command I used was:``` 
 ```
 az network nsg list --output table > nsg_list.tblfile
